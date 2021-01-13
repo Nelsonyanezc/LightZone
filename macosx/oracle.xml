@@ -60,17 +60,6 @@
       <librarypath file="${app-dir}/*.jnilib"/>
       <classpath file="${app-dir}/*.jar"/>
 
-      <plistentry key="CFBundleHelpBookFolder" value="${app-name}_Help"/>
-      <plistentry key="CFBundleHelpBookName" value="${app-name} Help"/>
-
-      <option value="-Xdock:name=${app-name}"/>
-      <option value="-Dapple.laf.useScreenMenuBar=true"/>
-      <option value="-Dcom.apple.macos.use-file-dialog-packages=true"/>
-      <option value="-Dcom.apple.macos.useScreenMenuBar=true"/>
-      <option value="-Dapple.awt.graphics.UseQuartz=false"/>
-      <option value="-Dfile.encoding=utf-8"/>
-      <option value="-Dlensfun.dir=$APP_ROOT/Contents/Resources/share/lensfun"/>
-
       <bundledocument
         extensions="jpe,jpg,jpeg"
         name="JPEG Image"

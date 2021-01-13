@@ -98,17 +98,10 @@
         <key>MainClass</key>
         <string>com.lightcrafts.platform.macosx.MacOSXLauncher</string>
         <key>JVMVersion</key>
-        <string>1.6+</string>
+        <string>11+</string>
         <key>ClassPath</key>
         <array>
             <string>.</string>
-            <string>asm-all-2.2.2.jar</string>
-            <string>jai_core-1.1.3.jar</string>
-            <string>laf-widget.jar</string>
-            <string>lightcrafts-apple.jar</string>
-            <string>lightcrafts.jar</string>
-            <string>quaqua.jar</string>
-            <string>substance-lite.jar</string>
             <string>/System/Library/Java</string>
         </array>
         <key>VMOptions</key>
@@ -118,15 +111,17 @@
             <string>-XX:MinHeapFreeRatio=30</string>
             <string>-XX:MaxHeapFreeRatio=30</string>
             <string>-Xmx16384m</string>
+            <string>-Xdock:name=@APPNAME@</string>
+            <string>-Xdock:icon=@APPNAME@.icns</string>
         </array>
         <key>Properties</key>
         <dict>
             <key>apple.laf.useScreenMenuBar</key>
             <string>true</string>
-            <key>apple.awt.graphics.UseQuartz</key>
-            <string>false</string>
             <key>file.encoding</key>
             <string>utf-8</string>
+            <key>lensfun.dir</key>
+            <string>$APP_ROOT/Contents/Resources/share/lensfun</string>
         </dict>
         <key>WorkingDirectory</key>
         <string>$APP_PACKAGE/$JAVAROOT</string>
