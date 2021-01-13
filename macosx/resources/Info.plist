@@ -84,6 +84,12 @@
     <string>LightZone.icns</string>
     <key>NSHighResolutionCapable</key>
     <true/>
+    <key>LSArchitecturePriority</key>
+	<array>
+        <string>arm64e</string>
+        <string>arm64</string>
+        <string>x86_64</string>
+	</array>
 
     <!-- Java stuff -->
 
